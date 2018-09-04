@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "KKOpenSSL"
-s.version      = "0.0.4"
+s.version      = "0.0.5"
 s.summary      = "KKOpenSSL Libraries and CocoaPod with BitCode for iOS,depend on OpenSSL"
 s.description  = "KKOpenSSL is an SSL/TLS and Crypto toolkit. Deprecated in Mac OS and gone in iOS, this spec gives your project non-deprecated OpenSSL support. Supports iOS including Simulator (armv7, arm64, i386, x86_64)."
 s.homepage     = "https://github.com/CheckNill/KKOpenSSL"
@@ -25,11 +25,11 @@ s.authors       =  {'Mark J. Cox' => 'mark@openssl.org',
 'Justin Plouffe' => 'plouffe.justin@gmail.com'}
 
 s.platform     = :ios, "8.0"
-s.ios.source_files        = 'KKOpenSSL/KKOpenSSL/**/*.h'
-s.ios.public_header_files = 'KKOpenSSL/KKOpenSSL/**/*.h'
-s.ios.header_dir          = 'KKOpenSSL/KKOpenSSL'
-s.ios.preserve_paths      = 'KKOpenSSL/lib-ios/libcrypto.a', 'KKOpenSSL/lib-ios/libssl.a'
-s.ios.vendored_libraries  = 'KKOpenSSL/lib-ios/libcrypto.a', 'KKOpenSSL/lib-ios/libssl.a'
+s.ios.source_files        = 'include-ios/openssl/**/*.h'
+s.ios.public_header_files = 'include-ios/openssl/**/*.h'
+s.ios.header_dir          = 'openssl'
+s.ios.preserve_paths      = 'lib-ios/libcrypto.a', 'lib-ios/libssl.a'
+s.ios.vendored_libraries  = 'lib-ios/libcrypto.a', 'lib-ios/libssl.a'
 
 s.libraries = 'ssl', 'crypto'
 end
