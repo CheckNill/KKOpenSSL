@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
 s.name         = "KKOpenSSL"
-s.version      = "0.0.1"
-s.summary      = "KKOpenSSL Libraries and CocoaPod with BitCode for iOS and OSX,depend on OpenSSL"
-s.description  = "KKOpenSSL is an SSL/TLS and Crypto toolkit. Deprecated in Mac OS and gone in iOS, this spec gives your project non-deprecated OpenSSL support. Supports OSX and iOS including Simulator (armv7, arm64, i386, x86_64)."
+s.version      = "0.0.2"
+s.summary      = "KKOpenSSL Libraries and CocoaPod with BitCode for iOS,depend on OpenSSL"
+s.description  = "KKOpenSSL is an SSL/TLS and Crypto toolkit. Deprecated in Mac OS and gone in iOS, this spec gives your project non-deprecated OpenSSL support. Supports iOS including Simulator (armv7, arm64, i386, x86_64)."
 s.homepage     = "https://github.com/CheckNill/KKOpenSSL"
 s.license         = { :type => 'KKOpenSSL', :file => 'LICENSE' }
-s.source       = { :git => "https://github.com/bither/OpenSSL.git", :branch => "master", :tag => "#{s.version}" }
+s.source       = { :git => "https://github.com/CheckNill/KKOpenSSL.git", :branch => "master", :tag => "#{s.version}" }
 
 s.authors       =  {'Mark J. Cox' => 'mark@openssl.org',
 'Ralf S. Engelschall' => 'rse@openssl.org',
