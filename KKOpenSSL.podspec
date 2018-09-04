@@ -30,7 +30,6 @@ s.ios.public_header_files = 'include-ios/openssl/**/*.h'
 s.ios.header_dir          = 'openssl'
 s.ios.preserve_paths      = 'lib-ios/libcrypto.a', 'lib-ios/libssl.a'
 s.ios.vendored_libraries  = 'lib-ios/libcrypto.a', 'lib-ios/libssl.a'
-s.static_framework = true
 
 s.libraries = 'ssl', 'crypto'
 end
